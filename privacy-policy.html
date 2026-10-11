@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ad Astra — Privacy Policy</title>
+<style>
+  body { max-width: 640px; margin: 0 auto; padding: 48px 24px 80px;
+         font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+         font-size: 17px; line-height: 1.6; color: #33402f; background: #fffdf6; }
+  h1 { font-weight: 400; font-size: 34px; margin: 0 0 4px; }
+  h2 { font-weight: 400; font-size: 22px; margin: 34px 0 10px; }
+  .date { color: #97a390; font-size: 14px; margin-bottom: 30px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #4e7340; }
+  code { font-size: 0.88em; }
+</style>
+</head>
+<body>
+<h1>Ad Astra — Privacy Policy</h1>
+<p class="date">Effective 11 October 2026</p>
+
+<p>Ad Astra is a browser extension, published by Muying Zhu, that puts a brief,
+calm pause in front of distracting websites you choose. This policy describes
+what the extension stores, what it never does, and why it asks for the
+permissions it asks for. The short version: <strong>everything the extension
+keeps stays on your device, and the extension itself sends nothing
+anywhere.</strong></p>
+
+<h2>What Ad Astra stores, and where</h2>
+<p>All of the following lives in your browser's local extension storage, on
+your device and nowhere else:</p>
+<ul>
+  <li><strong>Your gated-sites list</strong> — the sites you have chosen to put the gate in front of.</li>
+  <li><strong>Held thoughts</strong> — notes you type at the gate or in the side panel, kept with the time and, for notes typed at the gate, the name of the site you were heading to. The most recent 200 are retained; you can clear the list in the popup at any time.</li>
+  <li><strong>Sticky-note tasks</strong> — the to-do notes you write on the new tab page. A finished task is removed when the day rolls over at 3 a.m.; an unfinished one stays until you tear it off.</li>
+  <li><strong>One setting and some working state</strong> — whether gating applies all the time or only during focus sessions; whether the first-run walkthrough has been shown; any running focus session; temporary 15-minute passes for sites you chose to continue to; and the pooled counter of time spent on gated sites, which resets after an hour away from all of them.</li>
+</ul>
+<p>None of this is transmitted or synced by the extension; it exists only in
+your own browser profile. Uninstalling the extension deletes all of it.</p>
+
+<h2>What Ad Astra never does</h2>
+<ul>
+  <li>No data leaves your device. The extension makes no network requests of its own. (The search box on the new tab page is an ordinary Google search: pressing Enter navigates to google.com with what you typed, as the address bar would. The extension keeps no record of it, and Google's handling of that search is governed by Google's own privacy policy, not this one.)</li>
+  <li>No analytics, telemetry, tracking, or crash reporting.</li>
+  <li>No accounts, and no reading of your browser history. The only record of sites it keeps is one it makes itself, listed above: the site name attached to a held thought, and a temporary pass — both stored only on your device.</li>
+  <li>No reading of page content. The script that runs on pages you visit only checks whether the site is on your gated list and, if it is, counts the time you spend there and shows the timer on the page. It does not read, store, or transmit anything from the page.</li>
+  <li>Nothing is ever sold or shared with anyone, because nothing ever reaches the developer: there is no server, and the developer has no access to anything the extension stores.</li>
+</ul>
+
+<h2>Why it asks for the permissions it asks for</h2>
+<ul>
+  <li><strong>Access to sites you visit</strong> — the gated-sites list is yours to edit, so the gate must be able to act on whichever sites you choose; the same access lets time on gated sites be counted. No page content is read.</li>
+  <li><strong>declarativeNetRequest</strong> — redirects your navigation to a gated site over to the extension's own gate page. This API was chosen deliberately because it lets the browser do the redirecting without the extension observing your web traffic.</li>
+  <li><strong>storage</strong> — keeps everything listed above on your device.</li>
+  <li><strong>alarms</strong> — ends focus sessions and expires 15-minute passes at the right time.</li>
+  <li><strong>sidePanel</strong> — offers the optional side-panel view of the extension: the scene, the note box, and the focus-session controls.</li>
+</ul>
+<p>Ad Astra's handling of user data complies with the Chrome Web Store User
+Data Policy, including its Limited Use requirements.</p>
+
+<h2>Your control</h2>
+<p>Everything the extension keeps is yours to change or remove: edit the
+gated-sites list and clear held thoughts in the popup, tear off tasks on the
+new tab page, and remove the extension from <code>chrome://extensions</code>
+to delete all of it at once.</p>
+
+<h2>Children</h2>
+<p>Ad Astra is not directed at children and collects no personal information
+from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy ever changes, the new version will be posted at this address
+with a new effective date. The extension's design principle is that nothing
+leaves your device; any change that weakened that promise would be stated
+plainly at the top of this page.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the extension:
+<a href="mailto:muying2007@gmail.com">muying2007@gmail.com</a></p>
+</body>
+</html>
